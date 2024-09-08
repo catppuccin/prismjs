@@ -36,7 +36,7 @@
 
 ## Usage
 
-1. Load the theme stylesheet (`https://uncenter.github.io/ctp-prism/<flavor>.css`) on your page:
+1. Include the theme/stylesheet (`https://uncenter.github.io/ctp-prism/<flavor>.css`) in your page:
 
 ```html
 <!DOCTYPE html>

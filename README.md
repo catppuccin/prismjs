@@ -36,14 +36,14 @@
 
 ## Usage
 
-1. Include the theme/stylesheet (`https://uncenter.github.io/ctp-prism/<flavor>.css`) in your page:
+Include the theme/stylesheet (`https://uncenter.github.io/ctp-prism/<flavor>.css`) in your page. For example:
 
 ```html
 <!DOCTYPE html>
 <html>
     <head>
         ...
-        <link href="//uncenter.github.io/ctp-prism/<flavor>.css" rel="stylesheet" />
+        <link href="//uncenter.github.io/ctp-prism/mocha.css" rel="stylesheet" />
     </head>
     <body>
         ...
@@ -51,6 +51,9 @@
     </body>
 </html>
 ```
+
+> [!NOTE]
+> The theme does not contain styling for the layout/padding of the highlighted code.
 
 ## 💝 Thanks to
 

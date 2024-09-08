@@ -1,0 +1,143 @@
+---
+whiskers:
+  version: "2.4.0"
+  matrix:
+   - flavor
+  filename: "themes/{{ flavor.identifier }}.css"
+  hex_format: "#{{r}}{{g}}{{b}}{{z}}"
+---
+code[class*="language-"],
+pre[class*="language-"] {
+	color: {{ text.hex }};
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: {{ mantle.hex }};
+}
+
+/* https://prismjs.com/tokens.html */
+
+.token.keyword {
+	color: {{ mauve.hex }};
+}
+
+.token.builtin {
+	color: {{ red.hex }};
+}
+
+.token.class-name {
+	color: {{ yellow.hex }};
+}
+
+.token.function {
+	color: {{ blue.hex }};
+}
+
+.token.boolean,
+.token.number {
+	color: {{ peach.hex }};
+}
+
+.token.string,
+.token.char {
+	color: {{ green.hex }};
+}
+
+.token.symbol {
+	color: {{ yellow.hex }};
+}
+
+.token.regex {
+	color: {{ pink.hex }};
+}
+
+.token.url {
+	color: {{ green.hex }};
+}
+
+.token.operator {
+	color: {{ teal.hex }};
+}
+
+.token.variable {
+	color: {{ text.hex }};
+}
+
+.token.constant {
+	color: {{ peach.hex }};
+}
+
+.token.property {
+	color: {{ blue.hex }};
+}
+
+.token.punctuation {
+	color: {{ overlay2.hex }};
+}
+
+.token.important {
+	color: {{ mauve.hex }};
+}
+
+.token.comment {
+	color: {{ overlay0.hex }};
+}
+
+.token.tag {
+	color: {{ blue.hex }};
+}
+
+.token.attr-name {
+	color: {{ yellow.hex }};
+}
+
+.token.attr-value {
+	color: {{ green.hex }};
+}
+
+.token.namespace {
+	color: {{ yellow.hex }};
+}
+
+.token.prolog,
+.token.doctype {
+	color: {{ mauve.hex }};
+}
+
+.token.cdata {
+	color: {{ teal.hex }};
+}
+
+.token.entity {
+	color: {{ red.hex }};
+}
+
+.token.atrule {
+	color: {{ mauve.hex }};
+}
+
+.token.selector {
+	color: {{ blue.hex }};
+}
+
+/* Diff */
+
+.token.deleted {
+	color: {{ red.hex }};
+}
+
+.token.inserted {
+	color: {{ green.hex }}
+}
+
+/* Other */
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+

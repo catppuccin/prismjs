@@ -36,9 +36,21 @@
 
 ## Usage
 
-1. Download the flavor of your choice.
-2. Open the app and go to **Preferences** > **Appearance** > **Import theme**.
-3. Select the downloaded flavor file.
+1. Load the theme stylesheet (`https://uncenter.github.io/ctp-prism/<flavor>.css`) on your page:
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        ...
+        <link href="//uncenter.github.io/ctp-prism/<flavor>.css" rel="stylesheet" />
+    </head>
+    <body>
+        ...
+        <script src="prism.js"></script>
+    </body>
+</html>
+```
 
 ## 💝 Thanks to
 

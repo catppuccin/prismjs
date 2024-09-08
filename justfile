@@ -2,4 +2,4 @@ _default:
   @just --list
 
 build:
-  whiskers prism.tera
+  whiskers prismjs.tera

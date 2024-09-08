@@ -1,14 +1,14 @@
 <h3 align="center">
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-	Catppuccin for <a href="https://prismjs.com">Prism</a>
+	Catppuccin for <a href="https://prismjs.com">Prism.js</a>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 
 <p align="center">
-	<a href="https://github.com/catppuccin/prism/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/prism?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-	<a href="https://github.com/catppuccin/prism/issues"><img src="https://img.shields.io/github/issues/catppuccin/prism?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-	<a href="https://github.com/catppuccin/prism/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/prism?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/prismjs/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/prismjs?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/prismjs/issues"><img src="https://img.shields.io/github/issues/catppuccin/prismjs?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/prismjs/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/prismjs?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -36,19 +36,19 @@
 
 ## Usage
 
-Include the theme/stylesheet (`https://uncenter.github.io/ctp-prism/<flavor>.css`) in your page. For example:
+Include the theme/stylesheet (`https://uncenter.github.io/ctp-prismjs/<flavor>.css`) in your page. For example:
 
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-        ...
-        <link href="//uncenter.github.io/ctp-prism/mocha.css" rel="stylesheet" />
-    </head>
-    <body>
-        ...
-        <script src="prism.js"></script>
-    </body>
+  <head>
+    ...
+    <link href="//uncenter.github.io/ctp-prismjs/mocha.css" rel="stylesheet" />
+  </head>
+  <body>
+    ...
+    <script src="prism.js"></script>
+  </body>
 </html>
 ```
 

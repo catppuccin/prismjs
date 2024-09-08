@@ -57,7 +57,7 @@ pre[class*="language-"] {
 }
 
 .token.operator {
-	color: {{ teal.hex }};
+	color: {{ sky.hex }};
 }
 
 .token.variable {
@@ -81,7 +81,7 @@ pre[class*="language-"] {
 }
 
 .token.comment {
-	color: {{ overlay0.hex }};
+	color: {{ overlay2.hex }};
 }
 
 .token.tag {

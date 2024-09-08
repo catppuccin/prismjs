@@ -49,7 +49,7 @@ pre[class*="language-"] {
 }
 
 .token.operator {
-	color: #179299;
+	color: #04a5e5;
 }
 
 .token.variable {
@@ -73,7 +73,7 @@ pre[class*="language-"] {
 }
 
 .token.comment {
-	color: #9ca0b0;
+	color: #7c7f93;
 }
 
 .token.tag {

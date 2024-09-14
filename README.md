@@ -36,14 +36,14 @@
 
 ## Usage
 
-Include the theme/stylesheet (`https://uncenter.github.io/ctp-prismjs/<flavor>.css`) in your page. For example:
+Include the theme/stylesheet (`https://prismjs.catppuccin.com/<flavor>.css`) in your page. For example:
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
     ...
-    <link href="//uncenter.github.io/ctp-prismjs/mocha.css" rel="stylesheet" />
+    <link href="//prismjs.catppuccin.com/mocha.css" rel="stylesheet" />
   </head>
   <body>
     ...

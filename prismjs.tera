@@ -3,132 +3,138 @@ whiskers:
   version: "2.4.0"
   matrix:
    - flavor
-  filename: "themes/{{ flavor.identifier }}.css"
+   - variant: ["flavor", "variable"]
+  filename: 'themes/{% if variant == "flavor" %}{{ flavor.identifier }}{% else %}variables{% endif %}.css'
   hex_format: "#{{r}}{{g}}{{b}}{{z}}"
 ---
+
+{%- macro color(c) -%}
+{% if variant == "flavor" %}{{ c.hex }}{% else %}var(--ctp-{{ c.identifier }}){% endif %}
+{%- endmacro -%}
+
 code[class*="language-"],
 pre[class*="language-"] {
-	color: {{ text.hex }};
+	color: {{ self::color(c=text) }};
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: {{ mantle.hex }};
+	background: {{ self::color(c=mantle) }};
 }
 
 /* https://prismjs.com/tokens.html */
 
 .token.keyword {
-	color: {{ mauve.hex }};
+	color: {{ self::color(c=mauve) }};
 }
 
 .token.builtin {
-	color: {{ red.hex }};
+	color: {{ self::color(c=red) }};
 }
 
 .token.class-name {
-	color: {{ yellow.hex }};
+	color: {{ self::color(c=yellow) }};
 }
 
 .token.function {
-	color: {{ blue.hex }};
+	color: {{ self::color(c=blue) }};
 }
 
 .token.boolean,
 .token.number {
-	color: {{ peach.hex }};
+	color: {{ self::color(c=peach) }};
 }
 
 .token.string,
 .token.char {
-	color: {{ green.hex }};
+	color: {{ self::color(c=green) }};
 }
 
 .token.symbol {
-	color: {{ yellow.hex }};
+	color: {{ self::color(c=yellow) }};
 }
 
 .token.regex {
-	color: {{ pink.hex }};
+	color: {{ self::color(c=pink) }};
 }
 
 .token.url {
-	color: {{ green.hex }};
+	color: {{ self::color(c=green) }};
 }
 
 .token.operator {
-	color: {{ sky.hex }};
+	color: {{ self::color(c=sky) }};
 }
 
 .token.variable {
-	color: {{ text.hex }};
+	color: {{ self::color(c=text) }};
 }
 
 .token.constant {
-	color: {{ peach.hex }};
+	color: {{ self::color(c=peach) }};
 }
 
 .token.property {
-	color: {{ blue.hex }};
+	color: {{ self::color(c=blue) }};
 }
 
 .token.punctuation {
-	color: {{ overlay2.hex }};
+	color: {{ self::color(c=overlay2) }};
 }
 
 .token.important {
-	color: {{ mauve.hex }};
+	color: {{ self::color(c=mauve) }};
 }
 
 .token.comment {
-	color: {{ overlay2.hex }};
+	color: {{ self::color(c=overlay2) }};
 }
 
 .token.tag {
-	color: {{ blue.hex }};
+	color: {{ self::color(c=blue) }};
 }
 
 .token.attr-name {
-	color: {{ yellow.hex }};
+	color: {{ self::color(c=yellow) }};
 }
 
 .token.attr-value {
-	color: {{ green.hex }};
+	color: {{ self::color(c=green) }};
 }
 
 .token.namespace {
-	color: {{ yellow.hex }};
+	color: {{ self::color(c=yellow) }};
 }
 
 .token.prolog,
 .token.doctype {
-	color: {{ mauve.hex }};
+	color: {{ self::color(c=mauve) }};
 }
 
 .token.cdata {
-	color: {{ teal.hex }};
+	color: {{ self::color(c=teal) }};
 }
 
 .token.entity {
-	color: {{ red.hex }};
+	color: {{ self::color(c=red) }};
 }
 
 .token.atrule {
-	color: {{ mauve.hex }};
+	color: {{ self::color(c=mauve) }};
 }
 
 .token.selector {
-	color: {{ blue.hex }};
+	color: {{ self::color(c=blue) }};
 }
 
 /* Diff */
 
 .token.deleted {
-	color: {{ red.hex }};
+	color: {{ self::color(c=red) }};
 }
 
 .token.inserted {
-	color: {{ green.hex }}
+	color: {{ self::color(c=green) }}
 }
 
 /* Other */

@@ -16,6 +16,7 @@ var(--ctp-{{ c.identifier }}){% if variant == "variables-important" %} !importan
 {%- endif -%}
 {%- endmacro -%}
 
+{%- if variant == "flavor" -%}
 code[class*="language-"],
 pre[class*="language-"] {
 	color: {{ self::color(c=text) }};
@@ -25,6 +26,8 @@ pre[class*="language-"] {
 pre[class*="language-"] {
 	background: {{ self::color(c=mantle) }};
 }
+
+{% endif -%}
 
 /* https://prismjs.com/tokens.html */
 

@@ -1,13 +1,3 @@
-code[class*="language-"],
-pre[class*="language-"] {
-	color: var(--ctp-text);
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	background: var(--ctp-mantle);
-}
-
 /* https://prismjs.com/tokens.html */
 
 .token.keyword {

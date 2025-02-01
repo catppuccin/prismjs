@@ -3,13 +3,17 @@ whiskers:
   version: "2.4.0"
   matrix:
    - flavor
-   - variant: ["flavor", "variable"]
-  filename: 'themes/{% if variant == "flavor" %}{{ flavor.identifier }}{% else %}variables{% endif %}.css'
+   - variant: ["flavor", "variables", "variables-important"]
+  filename: 'themes/{% if variant == "flavor" %}{{ flavor.identifier }}{% elif variant == "variables" %}variables{% else %}variables.important{% endif %}.css'
   hex_format: "#{{r}}{{g}}{{b}}{{z}}"
 ---
 
 {%- macro color(c) -%}
-{% if variant == "flavor" %}{{ c.hex }}{% else %}var(--ctp-{{ c.identifier }}){% endif %}
+{%- if variant == "flavor" -%}
+{{ c.hex }}
+{%- else -%}
+var(--ctp-{{ c.identifier }}){% if variant == "variables-important" %} !important{% endif %}
+{%- endif -%}
 {%- endmacro -%}
 
 code[class*="language-"],

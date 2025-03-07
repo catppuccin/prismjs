@@ -43,7 +43,7 @@ Include the theme/stylesheet (`https://prismjs.catppuccin.com/<flavor>.css`) in 
 <html>
   <head>
     ...
-    <link href="//prismjs.catppuccin.com/mocha.css" rel="stylesheet" />
+    <link href="https://prismjs.catppuccin.com/mocha.css" rel="stylesheet" />
   </head>
   <body>
     ...

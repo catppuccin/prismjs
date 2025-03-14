@@ -36,6 +36,11 @@
 
 ## Usage
 
+> [!NOTE]
+> The theme does not contain styling for the layout/padding of the highlighted code.
+
+### Remote stylesheet
+
 Include the theme/stylesheet (`https://prismjs.catppuccin.com/<flavor>.css`) in your page. For example:
 
 ```html
@@ -52,8 +57,23 @@ Include the theme/stylesheet (`https://prismjs.catppuccin.com/<flavor>.css`) in 
 </html>
 ```
 
-> [!NOTE]
-> The theme does not contain styling for the layout/padding of the highlighted code.
+### Local CSS
+```bash
+# due to prismjs & this repository having the same name, an alias is used 
+yarn add catppuccin-prismjs@https://github.com/catppuccin/prismjs.git
+```
+
+#### SCSS
+```scss
+@import "catppuccin-prismjs/themes/macchiato";
+
+// Apply the theme only to selector
+main {
+    @import "catppuccin-prismjs/themes/latte";
+}
+```
+> Depending on your scss config, you might have to use "node_modules/catppuccin-prismjs/themes/macchiato";
+
 
 ## 💝 Thanks to
 
